@@ -1,0 +1,10 @@
+
+//title = "Practice Google Contest"
+//description = "Practice Google Contest"
+//apply from: "$rootDir/gradle/publishing.gradle"
+
+dependencies {
+
+
+  
+}

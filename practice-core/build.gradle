@@ -1,0 +1,10 @@
+
+//description = "Practice Core"
+//title = "Practice Core"
+//apply from: "$rootDir/gradle/publishing.gradle"
+
+dependencies {
+
+
+  
+}

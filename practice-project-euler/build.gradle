@@ -1,0 +1,10 @@
+
+//title = "Practice Project Euler"
+//description = "Practice Project Euler"
+//apply from: "$rootDir/gradle/publishing.gradle"
+
+dependencies {
+
+
+  
+}
