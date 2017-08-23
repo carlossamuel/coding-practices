@@ -1,5 +1,10 @@
 package org.carlossamuel.practice.euler;
 
+/**
+ * 
+ * Project Euler - exercise 1
+ * @author Carlos Cabral
+ */
 public class MultiplesOf3And5 {
   
   public static void main (String [] args) {

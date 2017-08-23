@@ -1,7 +1,11 @@
 package org.carlossamuel.practice.euler;
 
 import org.carlossamuel.practice.core.MathUtils;
-
+/**
+ * Project Euler - exercise 2
+ * @author Carlos Cabral
+ *
+ */
 public class EvenFibonacci {
 
 	/**
@@ -45,24 +49,15 @@ public class EvenFibonacci {
 	 */
 	private static long brutalForceImproved(long limit) {
 		int totalEven = 0;
+		long parentPrevious = 1l;
 		long previous = 1l;
-		long current = 2l;
-		long next = 0;
+		long current = parentPrevious+previous;
 		while (current <= limit) {
 			System.out.println("Current: " + current);
 			totalEven += current;
-			//First
-			next = previous + current;
-			previous = current;
-			current = next;
-			//SEcond
-			next = previous + current;
-			previous = current;
-			current = next;
-			//Third
-			next = previous + current;
-			previous = current;
-			current = next;
+			parentPrevious = previous + current;//First element
+			previous = current + parentPrevious;//Second element
+			current = parentPrevious+previous;//Third element
 		}
 		System.out.println("Total Even: " + totalEven);
 		return totalEven;
