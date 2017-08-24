@@ -54,18 +54,14 @@ public class LargestPrimeFactor {
 	  if (number == 1 || number == 2) {
 		  primeFactors.add(number);
 	  } else if (number > 2) {
-//		  if (MathUtils.isPrime(number)) {
-//			  primeFactors.add(number);
-//		  } else {
-			  long currentResult = number;
-			  for (long factorCandidate = 3l; factorCandidate <= currentResult; factorCandidate = MathUtils.nextPrime(factorCandidate)) {
-				  System.out.println("Next PRime: " + factorCandidate);
-				  if(currentResult % factorCandidate == 0) {
-					  primeFactors.add(factorCandidate);
-					  currentResult = currentResult / factorCandidate ;
-				  }
+		  long currentResult = number;
+		  for (long factorCandidate = 3l; factorCandidate <= currentResult; factorCandidate = MathUtils.nextPrime(factorCandidate)) {
+			  System.out.println("Next PRime: " + factorCandidate);
+			  if(currentResult % factorCandidate == 0) {
+				  primeFactors.add(factorCandidate);
+				  currentResult = currentResult / factorCandidate ;
 			  }
-//		  }
+		  }
 	  }
 	  return primeFactors;
   }
